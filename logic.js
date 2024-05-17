@@ -77,13 +77,6 @@ const parentElement = document.getElementById("menu-item-1.1");
 
     }
 
-    function displaymobiledd(){
-      var item = document.getElementById('product')
-      item.style.display = 'block';
-      console.log("id")
-    }
-
-
 
 
 var coll = document.getElementsByClassName("faq_link");
@@ -98,6 +91,12 @@ for (i = 0; i < coll.length; i++) {
       content.style.display = "block";
     }
   });
+}
+
+function displaymobiledd(id){
+  var item = document.getElementById(id)
+  item.style.display = 'block';
+  console.log(id)
 }
 
 {/* var coll = document.getElementById("collapsible"); */}

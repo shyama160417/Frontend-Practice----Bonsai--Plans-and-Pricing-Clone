@@ -193,6 +193,10 @@ nav{
     margin-bottom: 1rem;
     position: relative;
     /* background-color: aqua; */
+    @media screen and (max-width: 600px){
+        height: 5px;
+        margin-bottom: 0;
+    }
 
 }
 
@@ -204,6 +208,9 @@ nav{
     position: absolute;
     left: 1.5rem;
     top: 2.5rem;
+    @media screen and (max-width: 600px){
+        top: 0
+    }
 }
 
 .subsection h5{
@@ -325,6 +332,9 @@ nav{
     margin-top: 5px;
     font-weight: 400;
     opacity: .85;
+    @media screen and (max-width: 600px){
+        font-size: small;
+    }
 }
 
 .dd-hr{
@@ -1015,12 +1025,18 @@ footer{
 .pt-drop-down{
     height: 50rem;
     width: 40rem;
-    background-color: pink;
+    background-color: white;
     position: absolute;
     top: 0;
     /* left: -10px; */
     z-index: 2;
-    display: none;
+    /* display: none; */
+}
+
+.pt-submenu a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 /* .m-product:hover .pt-drop-down{

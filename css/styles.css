@@ -195,13 +195,14 @@ nav{
     /* background-color: aqua; */
     @media screen and (max-width: 600px){
         height: 5px;
-        margin-bottom: 0;
+        margin-left: 3rem;      
     }
 
 }
 
 .subsection:hover{
-    background-color: rgb(243, 242, 242);  
+    background-color: rgb(243, 242, 242); 
+    
 }
 
 .subsection-icon{
@@ -1022,15 +1023,22 @@ footer{
     margin-right: 50%;
 } */
 
+.close{
+    height: 30px;
+    margin-top: 2rem; 
+    margin-right: 2rem;
+}
+
+
 .pt-drop-down{
-    height: 50rem;
+    height: 90rem;
     width: 40rem;
     background-color: white;
     position: absolute;
     top: 0;
     /* left: -10px; */
     z-index: 2;
-    /* display: none; */
+    display: none;
 }
 
 .pt-submenu a{

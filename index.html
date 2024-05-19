@@ -254,21 +254,21 @@
             </div>
     
             <div class="navigation-mobile">
-                <img src="images/hamburger-menu-5-512.png" alt="menu" height="55px">
-                <div class="mobile-drop-down">
+                <img src="images/hamburger-menu-5-512.png" alt="menu" height="55px" onclick="showwindow('main-menu')">
+                <div class="mobile-drop-down pt-drop-down" id="main-menu">
                     <div class="menu-header">
                         <img src="images/logo-small.png" alt="logo-small">
-                        <img src="images/cross-svgrepo-com.svg" alt="close" height="30px" style="margin-top: 2rem; margin-right: 2rem;">
+                        <img src="images/cross-svgrepo-com.svg" alt="close" class="close" onclick="closewindow()">
                     </div>
                     <div class="menu-options">
-                        <div class="m-option" onclick="displaymobiledd('product')">
+                        <div class="m-option" onclick="showwindow('product')">
                                 Product
                                 <i class="fa fa-chevron-down chev_space"></i>
                         </div>
                         <div class="pt-drop-down" id="product">
                             <!-- ========================================= -->
                             <div class="drop-down-section">
-                                <div class="dd-header">
+                                <div class="dd-header" onclick="showwindow('bonsai-wf')">
                                     Bonsai Workflow
                                 </div>
                                 <div class="dd-content">
@@ -367,12 +367,12 @@
                           <!-- ================================================= -->
                         </div>                        
                         <hr class="m-option-hr"/>
-                        <div class="m-option" onclick="displaymobiledd('templates')">
+                        <div class="m-option" onclick="showwindow('templates')">
                             Templates
                             <i class="fa fa-chevron-down chev_space"></i>
                         </div>
                         <!-- -------------Templates submenu-------------- -->
-                        <div class="pt-drop-down pt-submenu" id="bonsai-wf">
+                        <div class="pt-drop-down pt-submenu" id="templates">
                             
                             <a href="#">
                                 <div class="subsection">

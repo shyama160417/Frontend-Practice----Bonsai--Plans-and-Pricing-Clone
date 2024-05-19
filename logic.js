@@ -93,10 +93,18 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-function displaymobiledd(id){
+
+function showwindow(id){
   var item = document.getElementById(id)
   item.style.display = 'block';
-  console.log(id)
+}
+
+function closewindow(){  
+  var menuitems = document.getElementsByClassName("pt-drop-down");
+  for(i=0; i<menuitems.length; i++)
+    {
+    menuitems[i].style.display = "none";
+    }
 }
 
 {/* var coll = document.getElementById("collapsible"); */}
